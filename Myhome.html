@@ -1,0 +1,174 @@
+<html>
+	<head>
+
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script>
+			var imageArray = ["images/cutee.jpg","images/cutee1.jpg","images/cutee2.jpg","images/cutee3.jpg"];
+
+			var imageIndex = 0; 
+
+			function changeImage() {
+				document.getElementById("sample").src=imageArray[imageIndex];	
+				imageIndex++;
+				
+				if(imageIndex>2){
+					imageIndex=0;
+					}
+			}
+			
+			
+			function previousImage() {
+				document.getElementById("sample").src=imageArray[imageIndex];
+				imageIndex--;
+				
+				if(imageIndex<0){
+					imageIndex=2;
+					}
+			}
+			
+		</script>
+		
+		
+		
+
+	</head>
+
+
+
+
+	<body>
+		<div class="container">
+		
+			<div class="row">
+				<div class="well">
+					<h1 class="text-center">  My simple Website </h1>
+				</div>
+				
+			</div>
+		
+		
+		
+		
+		
+			<div class="row">
+				<div class="col-md-4">
+		
+					<div class="well">
+						<!-- <img src="ami.jpg" class="img-responsive" alt="Responsive image">  -->
+						
+						<img id="sample" src="images/cutee.jpg" style="height:300px;width:300px;">
+		                <p align="right"><button onclick="changeImage()">Next</button></p>
+						<p align="left"><button onclick="previousImage()">Previous</button></p>
+						
+					<br /> 
+			
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs nav-stacked" role="tablist">
+							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+							<li role="presentation"><a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Portfolio</a></li>
+							<li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact Me</a></li>
+						</ul>
+		
+					</div>
+		
+				</div>
+	
+	
+	
+				<div class="col-md-8">
+					<div class="row">
+					<div class="well">
+						<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="home">
+									<h1 class="text-center"> About Me </h1> <br /> <br />
+									<h3> I am sanjida Rafin. I have complited my graduation in Computer Science And Telecommunication Engineering from 
+										Noakhali Science And Technology University.<br />
+										Now I am working as a FTFL trainee.</h3>
+								
+								
+								</div>
+								<div role="tabpanel" class="tab-pane" id="profile">
+									
+								    <h2>Sanjida</h2>
+
+									<p>
+										I am sanjida. I have complited my B.Cs.<br />
+										Engineering in Computer Science And Telecommunication Engineering.<br />
+										Here I am  in PHP track. I want to be a strong web developer. 
+									</p>
+									
+								</div>
+								<div role="tabpanel" class="tab-pane" id="portfolio">
+									<h1 class="text-center"> My Portfolio</h1> <br /> <br />
+									<h2>Project: Online Food Delivery System</h2>
+									<h2>Description</h2>
+									<h3>To get food on customers doorstep when necessary, this is my aimple attempt. </h3>
+									<h3>Source code: http://www.github.com/sanjidarafin/FoodDelivery</h3>
+									
+								</div>
+								<div role="tabpanel" class="tab-pane" id="contact">
+									<center>
+										<font face="SolaimanLipi" colore="black" size="6">
+										<h2 align="center">Contact Me</h2>
+											For any issue, you can contact.
+											</font></br></br>
+				
+										<form name="information" method="post" action="contact.html">
+										<font face="SolaimanLipi" colore="gray" size="4">
+
+										Name:&nbsp; &nbsp;
+
+											<input type="text" placeholder="your name" name="name"> </br></br>
+
+
+										E-mail:&nbsp; &nbsp;
+
+											<input type="text" placeholder="me@example.com" name="email"></br></br>
+
+
+
+										Message: &nbsp; &nbsp;&nbsp;
+											<textarea rows="3" cols="20"></textarea></br></br>
+
+
+										Famale:
+
+											<input type="radio" placeholder="female" name="gender">
+
+										Male:
+
+											<input type="radio" value="male" name="gender"></br></br>
+											<input type="submit" value="submit" name="sign up">
+												</br><br />
+
+									</center>
+								</div>
+							</div>
+			
+			
+			
+						
+							<a class="btn btn-success" href="#" role="button">About Me</a>
+							<a class="btn btn-success" href="#" role="button">My activity</a>
+							<a class="btn btn-success" href="#" role="button">Achievement</a>
+							<a class="btn btn-success" href="#" role="button">Contact Me</a>
+					</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="well">
+					<h3 class="text-center"> All rights reserved by_@suborna  </h3>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
